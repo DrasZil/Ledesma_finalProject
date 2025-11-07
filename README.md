@@ -11,7 +11,7 @@ The file structure instructed from the docs file does not work in my case:
 
 In the console it reads it as an error, so what I did to the file structure instead is this:
 
---Main
+-Main
     --pages
         ---css
         ---js
