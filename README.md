@@ -4,13 +4,13 @@ intro to computing final project for the 1st semester
 The file structure instructed from the docs file does not work in my case: 
 
 -Main
-    -pages
-    -css
-    -js
-    -image
+    --pages
+    --css
+    --js
+    --images
 
 In the console it reads it as an error, so what I did to the file structure instead is this:
-
+<pre>
 ```
 |   README.md
 |   .gitattributes
@@ -44,7 +44,14 @@ In the console it reads it as an error, so what I did to the file structure inst
                 facebook.svg
                 icons8-github-24.png
                 youtube.svg
+
 ```
+</pre>
+-Main
+    -images
+    -pages
+        -css
+        -js
         
 Now the file structure worked and connects the css and js file nicely.
 
