@@ -1,4 +1,4 @@
-/**Settings for the whole page**/
+/*Settings for the whole page*/
 *{
     margin: 0;
     padding: 0;
@@ -8,17 +8,17 @@
     font-family: "Poppins";
 }
 
-/**Creating Variables for colors = easy access**/
+/*Creating Variables for colors = easy access*/
 :root{
     --primary-bg-color: #000000;
-    --secondary-bg-color: #5D0E41;
+    --secondary-bg-color: #25041a;
     --text-color: white;
     --primary-color: #FF204E;
 }
 
 html{
     font-size: 60%;
-    overflow: hidden;
+    overflow: auto;
 }
 
 body{
@@ -26,18 +26,20 @@ body{
     color: var(--text-color);
 }
 
+/*Navigation Bar/Header*/
+
 .header{
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    padding: 4rem 15%; /**15 top and buttom, 15% right left**/
-    background-color: rgba(0, 0, 0, 0.3); /**transparent effect**/
-    backdrop-filter: blur(10px); /**makes it look like a glass**/
+    padding: 4rem 15%; /*15 top and buttom, 15% right left*/
+    background-color: rgba(0, 0, 0, 0.3); /*transparent effect*/
+    backdrop-filter: blur(10px); /*makes it look like a glass*/
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000; /**just making sur its on top of everything and does not disappear**/
+    z-index: 1000; /*just making sur its on top of everything and does not disappear*/
 }
 
 #menu-icon{
@@ -53,12 +55,12 @@ body{
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
-/**Makes logo a bit bigger upon hovering**/
+/*Makes logo a bit bigger upon hovering*/
 .logo:hover{
     transform: scale(1.1);
 }
 
-/**Adds color to my logo text**/
+/*Adds color to my logo text*/
 span{
         background: linear-gradient(
         270deg,
@@ -70,7 +72,7 @@ span{
     color: transparent;
 }
 
-/**Adjusting the appearance and spacing of may navbar links**/
+/*Adjusting the appearance and spacing of may navbar links*/
 .nav-bar a{
     font-size: 1.8rem;
     color: var(--text-color);
@@ -79,13 +81,13 @@ span{
     transition: 0.3s ease-in-out;
     border-bottom: 3px solid transparent;
 }
-/** nav link changes upon hover**/
+/* nav link changes upon hover*/
 .nav-bar a:hover{
     color: var(--primary-color);
     border-bottom: 1px solid var(--primary-color);
 }
 
-/**Adds styling to the button and gives gradient effect**/
+/*Adds styling to the button and gives gradient effect*/
 .btn-gradient{
     font-size: 1.8rem;
     padding: 1rem 2rem;
@@ -103,13 +105,13 @@ span{
     border: none;
     text-wrap: nowrap;
 }
-/**Makes btn a bit bigger upon hover**/
+/*Makes btn a bit bigger upon hover*/
 .btn-gradient:hover{
     transform: scale(1.05);
 }
 
 
-/**Home Section**/
+/*Home Section*/
 
 section{
     min-height: 100vh;
@@ -149,14 +151,14 @@ section{
     box-shadow: 0 0 25px var(--primary-color);
     transition: 0.4s ease-in-out;
 }
-/**A cool expanding light effect around the img upon hover**/
+/*A cool expanding light effect around the img upon hover*/
 .home-img img:hover{
     box-shadow: 0 0 25px var(--primary-color),
                 0 0 50px var(--primary-color),
                 0 0 100px var(--primary-color);
 }
 
-/**Adds style to the social media icons**/
+/*Adds style to the social media icons*/
 .social-icons a{
     display: inline-flex;
     justify-content: center;
@@ -170,8 +172,8 @@ section{
     margin: 3rem 0.5rem;
     transition: 0.3s ease-in-out;
 }
-/**changes the icons text and background color and it makes it a bit bigger
-and moves to the left a bit upon hover**/
+/*changes the icons text and background color and it makes it a bit bigger
+and moves to the left a bit upon hover*/
 .social-icons a:hover{
     color: var(--text-color);
     background-color: var(--primary-color);
@@ -179,12 +181,12 @@ and moves to the left a bit upon hover**/
     box-shadow: 0 0 25px var(--primary-color);
 }
 
-/**Style for the Hire me and contact button**/
+/*Style for the Hire me and contact button*/
 .btn-group{
     display: flex;
     gap: 1.5rem;
 }
-/**General styling for both buttons**/
+/*General styling for both buttons*/
 .btn{
     display: inline-block;
     padding: 1rem 3rem;
@@ -202,7 +204,7 @@ and moves to the left a bit upon hover**/
     box-shadow: 0 0 25px var(--primary-color),
                 0 0 50px var(--primary-color);
 }
-/**changes the styling of the 2nd button which is the nth (Contact btn)**/
+/*changes the styling of the 2nd button which is the nth (Contact btn)*/
 .btn-group a:nth-of-type(2){
     background-color: black;
     color: var(--primary-color);
@@ -213,4 +215,68 @@ and moves to the left a bit upon hover**/
     box-shadow: 0 0 25px var(--primary-color);
     background-color: var(--primary-color);
     color: black;
+}
+
+/*About Page*/
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    background: var(--secondary-bg-color);
+}
+.about-img img{
+    width: 32vh;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--primary-color);
+    transform: 0.4s ease-in-out;
+}
+/*A cool expanding light effect around the img upon hover*/
+.about-img img:hover{
+    box-shadow: 0 0 25px var(--primary-color),
+                0 0 50px var(--primary-color),
+                0 0 100px var(--primary-color);
+    transition: 0.4s ease-in-out;
+}
+.about-content h2{
+    font-size: 7rem;
+    text-align: left;
+}
+.about-content p{
+    font-size: 1.8rem;
+}
+.about-content .btn{
+    margin: 3rem 0;
+
+}
+
+/*Adding a nice scrollbar effect*/
+
+/*for Chrome, Edge, Safari*/
+::-webkit-scrollbar{
+    width: 14px;
+    height: 14px;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--primary-bg-color);
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(
+        180deg, 
+        #FD4470 10%,
+        #FF204E 50%, 
+        #A0153E 100%);
+    border-radius: 999px;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+}
+/*For Firefox*/
+*{
+    scrollbar-width: thin;
+    scrollbar-color: #FF204E var(--primary-bg-color);
+}
+ /* reduces layout shift when scrollbar appears */
+:root{
+    scrollbar-gutter: stable;
 }

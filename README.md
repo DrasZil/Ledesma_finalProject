@@ -1,17 +1,27 @@
 # Ledesma_finalProject
-intro to computing final project for the 1st semester
+Ledesma_finalProject
+Intro to Computing — Final Project (1st Semester)
 
-The file structure instructed from the docs file does not work in my case: 
+Original Folder Structure (from project instructions):
 
--Main
-    --pages
-    --css
-    --js
-    --images
+According to the provided instructions, the required file structure should look like this:
 
-In the console it reads it as an error, so what I did to the file structure instead is this:
 <pre>
-```
+
+Main
+├── pages
+├── css
+├── js
+└── images
+
+</pre>
+
+However, in my initial setup, this structure didn’t work as expected the CSS and JS files weren’t linking properly when accessed from the pages folder.
+The console indicated path errors whenever I tried to connect them.
+
+To troubleshoot, I reorganized my folders like this:
+<pre>
+Ledesma_finalProject
 |   README.md
 |   .gitattributes
 |   
@@ -47,15 +57,64 @@ In the console it reads it as an error, so what I did to the file structure inst
 
 ```
 </pre>
--Main
-    -images
-    -pages
-        -css
-        -js
         
-Now the file structure worked and connects the css and js file nicely.
+With this structure, everything worked fine because the CSS and JS were located within the same directory level as index.html.
 
-PS. I have just added JS as additional to make the menu bar work for smaller screens.
-    Followed some tutorials on youtube to get some ideas and feels but eventually did my own thing of the website,
-    and added some things that I learned from the tutorials and mixed some of their techniques *Not an expert front end dev lol*.
+PS. 
+    I have just added JS as additional to make the menu bar work for smaller screens.
 
+UPDATE:
+    learned that the issue wasn’t with the folder structure itself — it was with how I was linking files across directories.
+
+    By using the correct relative path syntax (../ to go up one level), I realized I could follow my teacher’s original structure without errors.
+    For example:
+
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/script.js"></script>
+
+<pre>
+
+```
+Ledesma_finalProject
+│   .gitattributes
+│   README.md
+│
+├───pages
+│       index.html
+│
+├───css
+│       style.css
+│
+├───js
+│       script.js
+│
+└───images
+    ├───Projects
+    │       Project 1.png
+    │       Project 2.png
+    │       Project 3.png
+    │       Project 4.png
+    │       Project 5.png
+    │       Project 6.png
+    │       Project 7.png
+    │       Project 8.png
+    │
+    ├───Pictures
+    │       Picture1.jpg
+    │       Picture2.jpg
+    │
+    └───Icons
+            instagram.svg
+            facebook.svg
+            icons8-github-24.png
+            youtube.svg
+```
+
+</pre>
+
+Note: 
+    - I added a small JavaScript file to make the menu bar responsive for smaller screens.
+
+  - I referenced a few tutorials for inspiration and learning, then combined those ideas with my own styling and layout decisions.
+
+   - I’m still learning front-end development, but this project helped me understand folder structuring and file linking much better.
