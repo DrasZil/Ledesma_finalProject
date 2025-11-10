@@ -75,7 +75,6 @@ UPDATE:
 <pre>
 
 ```
-Ledesma_finalProject
 │   .gitattributes
 │   README.md
 │
@@ -84,13 +83,13 @@ Ledesma_finalProject
 │
 ├───css
 │       style.css
+│       projects.css
 │
 ├───js
 │       script.js
 │
 └───images
     ├───Projects
-    │       Project 1.png
     │       Project 2.png
     │       Project 3.png
     │       Project 4.png
@@ -98,16 +97,12 @@ Ledesma_finalProject
     │       Project 6.png
     │       Project 7.png
     │       Project 8.png
+    │       Project 1.png
     │
-    ├───Pictures
-    │       Picture1.jpg
-    │       Picture2.jpg
-    │
-    └───Icons
-            instagram.svg
-            facebook.svg
-            icons8-github-24.png
-            youtube.svg
+    └───Pictures
+            Picture1.jpg
+            Picture2.jpg
+
 ```
 
 </pre>
