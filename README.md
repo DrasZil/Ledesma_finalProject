@@ -118,3 +118,6 @@ Note:
   - I referenced a few tutorials for inspiration and learning, then combined those ideas with my own styling and layout decisions.
 
    - I’m still learning front-end development, but this project helped me understand folder structuring and file linking much better.
+
+   -3d sliding images inspiration from lundev
+   -Web design and layout inspiraton from How to Web Dev
