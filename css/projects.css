@@ -18,7 +18,7 @@
     animation: autoRun 50s linear infinite;
 }
 /*This calls autoRun animation and then from stationary(0deg) to 
-full rotation(360def) for a full rotating animation*/
+full rotation(360def) for a full rotating animation on the images*/
 @keyframes autoRun{
     from{
         transform:  perspective(1000px) rotateX(-10deg) rotateY(0deg);
