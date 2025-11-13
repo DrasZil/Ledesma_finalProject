@@ -340,5 +340,162 @@ and moves to the left a bit upon hover*/
 }
 .service-info i{
     font-size: 8rem;
+}
 
+/*Contact Section*/
+.contact{
+    background-color: var(--secondary-bg-color);
+}
+.contact h2{
+    margin-bottom: 3rem;
+    color: var(--text-color);
+}
+.contact form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem 0;
+    text-align: center;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    background-color: var(--primary-bg-color);
+    border-radius: 2rem;
+    border: 2px solid var(--primary-color);
+    margin: 1.5rem 0;
+    resize: none;
+}
+
+/*Footer*/
+.footer{
+    background-color: var(--secondary-bg-color);
+    padding: 50px 0;
+}
+.footer .social-icons{
+    text-align: center;
+}
+.footer ul{
+    text-align: center;
+    font-size: 1.8rem;
+}
+.footer ul li{
+    display: inline-block;
+    margin: 20px;
+}
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+.footer ul li a:hover{
+    border-bottom: 3px solid var(--primary-color);
+}
+.footer .copyright{
+    text-align: center;
+    margin: 40px;
+    font-size: 16px;
+}
+
+/*responsive of the website in different screen sizes*/
+@media(max-width: 1285px){
+    #menu-icon{
+        display: block;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out, color 0.3s ease;
+        position: relative;
+        z-index: 2000;
+    }
+    #menu-icon:hover{
+        color: var(--primary-color);
+        transform: rotate(90deg);
+    }
+    /*rotate icon slightly when active*/
+    #menu-icon.bi-x-lg{
+        transform: rotate(180deg);
+    }
+
+    /*sliding navbar*/
+    .nav-bar{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 40%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    border-bottom-left-radius: 1rem;
+    border-left: 2px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    transition: right 0.4s ease-in-out;
+    z-index: 999;
+    }
+    /*When menu is opened*/
+    .nav-bar.active{
+        right: 0;
+    }
+    .nav-bar.active a{
+        animation: fadeIn 0.4s ease forwards
+    }
+    @keyframes fadeIn {
+        from{
+            opacity: 0;
+            transform: translateX(20px);
+        }to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    /*nav link style*/
+    .nav-bar a{
+        font-size: 2.2rem;
+        color: var(--text-color);
+        transition: 0.3s ease-in-out;
+    }
+    .nav-bar a:hover{
+        color: var(--primary-color);
+        transform: scale(1.1);
+    }
+
+    /*hide button in smaller screen size*/
+    .btn-gradient{
+        display: none;
+    }
+
+    /*adjust hero/main/home section layout*/
+    .home{
+        flex-direction: column-reverse;
+        margin-top: 10rem;
+        gap: 4rem;
+        text-align: center;
+    }
+    .home-content{
+        align-items: center;
+        text-align: center;
+    }
+    .home-img img{
+        width: 55vh;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .about h2{
+        text-align: center;
+        margin: 2rem 0;
+    }
+    .about img{
+        width: 50vh;
+    }
+    .contact form{
+        flex-direction: column;
+    }
 }
