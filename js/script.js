@@ -21,3 +21,14 @@ closeBtn.addEventListener('click', () => {
 lightbox.addEventListener('click', e =>{
     if(e.target === lightbox) lightbox.classList.remove('active');
 });
+
+/*Dropdown menu for the website, this will be appear and 
+be usable when the screen size is smaller */
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.nav-bar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bi-x-lg');
+    menuIcon.classList.toggle('bi-list');
+    navbar.classList.toggle('active');
+}
