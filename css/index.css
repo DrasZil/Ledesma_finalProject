@@ -509,7 +509,7 @@ and moves to the left a bit upon hover*/
         text-align: center;
     }
     .home-img img{
-        width: 55vh;
+       width: 80%;
     }
 
     .about{
@@ -521,9 +521,20 @@ and moves to the left a bit upon hover*/
         margin: 2rem 0;
     }
     .about img{
-        width: 50vh;
+       width: 75%;
     }
     .contact form{
         flex-direction: column;
+    }
+
+    /* Contact Form */
+    .contact form {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 0 2rem;
+    }
+
+    html, body {
+        overflow-x: hidden; /* Prevent horizontal scroll */
     }
 }
