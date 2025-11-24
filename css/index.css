@@ -325,6 +325,10 @@ and moves to the left a bit upon hover*/
     color: var(--text-color);
     border: 2px solid var(--primary-color);
     transform: scale(1.03);
+    box-shadow: 0 0 10px var(--primary-color),
+                0 0 15px var(--primary-color),
+                0 0 20px var(--secondary-bg-color);
+    transition: 0.5s ease-in-out;
 }
 .service-info{
     display: flex;
