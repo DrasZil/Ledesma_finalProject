@@ -541,4 +541,20 @@ and moves to the left a bit upon hover*/
     html, body {
         overflow-x: hidden; /* Prevent horizontal scroll */
     }
+
+    body p {
+        text-align: justify;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-info {
+        padding: 2rem; /* less padding for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-info {
+        padding: 1.5rem; /* tiny padding for really small screens */
+    }
 }
