@@ -78,17 +78,19 @@ UPDATE:
 Ledesma_finalProject
 │   .gitattributes
 │   README.md
-│
+│   index.html
+│   
 ├───pages
-│       index.html
-│
+│       about_me.html
+│       
 ├───css
-│       style.css
+│       index.css
 │       projects.css
-│
+│       about_me.css
+│       
 ├───js
 │       script.js
-│
+│       
 └───images
     ├───Projects
     │       Project 2.png
