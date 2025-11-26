@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
+//=====================================================================================================
+
     //for all html files
     /*Dropdown menu for the website, this will be appear and 
     be usable when the screen size is smaller */

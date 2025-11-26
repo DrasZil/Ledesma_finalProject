@@ -8,6 +8,8 @@
     font-family: "Poppins";
 }
 
+/*=============================================================================================================*/
+
 /*Creating Variables for colors = easy access*/
 :root{
     --primary-bg-color: #000000;
@@ -16,10 +18,14 @@
     --primary-color: #FF204E;
 }
 
+/*=============================================================================================================*/
+
 html{
     font-size: 60%;
     overflow: auto;
 }
+
+/*=============================================================================================================*/
 
 body{
     background: var(--primary-bg-color);
@@ -32,8 +38,9 @@ body a{
     font-weight: 500;
 }
 
-/*Navigation Bar/Header*/
+/*=============================================================================================================*/
 
+/*Navigation Bar/Header*/
 .header{
     position: fixed;
     width: 100%;
@@ -46,36 +53,6 @@ body a{
     justify-content: space-between;
     align-items: center;
     z-index: 1000; /*just making sur its on top of everything and does not disappear*/
-}
-
-#menu-icon{
-    font-size: 3.5rem;
-    color: var(--primary-color);
-    display: none;
-}
-
-.logo{
-    font-size: 3rem;
-    color: var(--text-color);
-    font-weight: 800;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-/*Makes logo a bit bigger upon hovering*/
-.logo:hover{
-    transform: scale(1.1);
-}
-
-/*Adds color to my logo text*/
-span{
-        background: linear-gradient(
-        270deg,
-        #FD4470 10%,
-        #FF204E 50%,
-        #A0153E 100%
-    );
-    background-clip: text;
-    color: transparent;
 }
 
 /*Adjusting the appearance and spacing of may navbar links*/
@@ -92,6 +69,45 @@ span{
     color: var(--primary-color);
     border-bottom: 1px solid var(--primary-color);
 }
+
+
+/*=============================================================================================================*/
+
+#menu-icon{
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    display: none;
+}
+
+/*=============================================================================================================*/
+
+.logo{
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+/*Makes logo a bit bigger upon hovering*/
+.logo:hover{
+    transform: scale(1.1);
+}
+
+/*=============================================================================================================*/
+
+/*Adds color to my logo text*/
+span{
+        background: linear-gradient(
+        270deg,
+        #FD4470 10%,
+        #FF204E 50%,
+        #A0153E 100%
+    );
+    background-clip: text;
+    color: transparent;
+}
+
+/*=============================================================================================================*/
 
 /*Adds styling to the button and gives gradient effect*/
 .btn-gradient{
@@ -116,9 +132,33 @@ span{
     transform: scale(1.05);
 }
 
+/*Style for the Hire me and contact button*/
+.btn-group{
+    display: flex;
+    gap: 1.5rem;
+}
+
+/*General styling for both buttons*/
+.btn{
+    display: inline-block;
+    padding: 1rem 3rem;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 25px var(--primary-color);
+    border-radius: 3rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: black;
+    border: 2px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--primary-color),
+                0 0 50px var(--primary-color);
+}
+/*=============================================================================================================*/
 
 /*Home Section*/
-
 section{
     min-height: 100vh;
     padding: 10rem 15%;
@@ -164,6 +204,8 @@ section{
                 0 0 100px var(--primary-color);
 }
 
+/*=============================================================================================================*/
+
 /*Adds style to the social media icons*/
 .social-icons a{
     display: inline-flex;
@@ -187,41 +229,7 @@ and moves to the left a bit upon hover*/
     box-shadow: 0 0 25px var(--primary-color);
 }
 
-/*Style for the Hire me and contact button*/
-.btn-group{
-    display: flex;
-    gap: 1.5rem;
-}
-/*General styling for both buttons*/
-.btn{
-    display: inline-block;
-    padding: 1rem 3rem;
-    background-color: var(--primary-color);
-    box-shadow: 0 0 25px var(--primary-color);
-    border-radius: 3rem;
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: black;
-    border: 2px solid transparent;
-    transition: 0.3s ease-in-out;
-}
-.btn:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 25px var(--primary-color),
-                0 0 50px var(--primary-color);
-}
-/*changes the styling of the 2nd button which is the nth (Contact btn)*/
-.btn-group a:nth-of-type(2){
-    background-color: black;
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-    box-shadow: 0 0 25px transparent;
-}
-.btn-group a:nth-of-type(2):hover{
-    box-shadow: 0 0 25px var(--primary-color);
-    background-color: var(--primary-color);
-    color: black;
-}
+/*=============================================================================================================*/
 
 /*About Page*/
 
@@ -254,8 +262,9 @@ and moves to the left a bit upon hover*/
 }
 .about-content .btn{
     margin: 3rem 0;
-
 }
+
+/*=============================================================================================================*/
 
 /*Adding a nice scrollbar effect*/
 
@@ -286,6 +295,8 @@ and moves to the left a bit upon hover*/
 :root{
     scrollbar-gutter: stable;
 }
+
+/*=============================================================================================================*/
 
 /*Services Page*/
 
@@ -352,6 +363,8 @@ and moves to the left a bit upon hover*/
     font-size: 8rem;
 }
 
+/*=============================================================================================================*/
+
 /*Contact Section*/
 .contact{
     background-color: var(--secondary-bg-color);
@@ -380,6 +393,22 @@ and moves to the left a bit upon hover*/
     margin: 1.5rem 0;
     resize: none;
 }
+
+/*changes the styling of the 2nd button which is the nth (Contact btn)*/
+.btn-group a:nth-of-type(2){
+    background-color: black;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 25px transparent;
+}
+.btn-group a:nth-of-type(2):hover{
+    box-shadow: 0 0 25px var(--primary-color);
+    background-color: var(--primary-color);
+    color: black;
+}
+
+
+/*=============================================================================================================*/
 
 /*Footer*/
 .footer{
@@ -432,6 +461,8 @@ and moves to the left a bit upon hover*/
 .footer-contact p a:hover{
     text-decoration: underline;
 }
+
+/*=============================================================================================================*/
 
 /*responsive of the website in different screen sizes*/
 @media(max-width: 1285px){
@@ -558,3 +589,5 @@ and moves to the left a bit upon hover*/
         padding: 1.5rem; /* tiny padding for really small screens */
     }
 }
+
+/*=============================================================================================================*/

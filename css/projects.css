@@ -101,6 +101,7 @@ full rotation(360def) for a full rotating animation on the images*/
     100% { transform: translateY(0px) translateZ(0px); }
 }
 
+/*=============================================================================================================*/
 
 /*Adding a light box effect so when one of the rotating images gets clicked 
 its full view will pop up*/
@@ -152,6 +153,8 @@ its full view will pop up*/
     cursor: pointer;
 }
 
+/*=============================================================================================================*/
+
 @media (max-width: 768px) {
     .projects .slider {
         top: 25%;
@@ -187,3 +190,5 @@ its full view will pop up*/
         100% { transform: translateY(0px) translateZ(0px); }
     }
 }
+
+/*=============================================================================================================*/
