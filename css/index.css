@@ -39,7 +39,6 @@ body a{
     font-weight: 500;
 }
 
-
 /*=============================================================================================================*/
 
 /*Navigation Bar/Header*/
@@ -59,7 +58,7 @@ body a{
 
 /*Adjusting the appearance and spacing of may navbar links*/
 .nav-bar a{
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     color: var(--text-color);
     margin-left: 4rem;
     font-weight: 500;
@@ -199,7 +198,7 @@ section{
     font-size: 4rem;
 }
 .home-content p{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 1.8;
 }
@@ -288,7 +287,7 @@ and moves to the left a bit upon hover*/
     text-align: left;
 }
 .about-content p{
-    font-size: 1.8rem;
+    font-size: 2.5rem;
 }
 .about-content .btn{
     margin: 3rem 0;
@@ -386,7 +385,7 @@ and moves to the left a bit upon hover*/
     font-weight: 800;
 }
 .service-info p{
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.7;
 }
@@ -431,15 +430,15 @@ and moves to the left a bit upon hover*/
 
 /*Footer*/
 .footer{
-    background-color: var(--secondary-bg-color);
-    padding: 50px 0;
+    background-color: var(--primary-bg-color);
+    padding: 25px 0;
 }
 .footer .social-icons{
     text-align: center;
 }
 .footer ul{
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 .footer ul li{
     display: inline-block;
@@ -456,13 +455,13 @@ and moves to the left a bit upon hover*/
 .footer .copyright{
     text-align: center;
     margin: 40px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .footer-contact{
     text-align: center;
-    margin: 2rem 0;
-    font-size: 1.6rem;
+    margin: 1.8rem 0;
+    font-size: 2rem;
     line-height: 2.5rem;
 }
 .footer-contact p{
@@ -605,13 +604,67 @@ li a{
     }
 }
 
-@media (max-width: 768px) {
+/* Large laptops & small desktops */
+@media (max-width: 1440px) {
+    .nav-bar {
+        width: 35%;
+    }
+    .nav-bar a {
+        font-size: 2rem;
+    }
+}
+
+/* Tablets & medium screens */
+@media (max-width: 1024px) {
+    .nav-bar {
+        width: 50%;
+    }
+    .nav-bar a {
+        font-size: 1.9rem;
+    }
+    .home-img img,
+    .about img {
+        width: 65%;
+    }
+}
+
+/* Small tablets / large phones */
+@media (max-width: 600px) {
+    .nav-bar {
+        width: 65%;
+    }
+    .nav-bar a {
+        font-size: 1.7rem;
+    }
+    .home {
+        margin-top: 6rem;
+        gap: 2rem;
+    }
     .service-info {
         padding: 2rem; /* less padding for small screens */
     }
 }
 
-@media (max-width: 480px) {
+/* Very small phones */
+@media (max-width: 375px) {
+    #menu-icon {
+        font-size: 1.6rem;
+    }
+    .nav-bar {
+        width: 80%;
+        gap: 2rem;
+    }
+    .nav-bar a {
+        font-size: 1.5rem;
+    }
+    .home-img img,
+    .about img {
+        width: 85%;
+    }
+    .footer-nav a {
+        font-size: 1.4rem;
+        gap: 1rem;
+    }
     .service-info {
         padding: 1.5rem; /* tiny padding for really small screens */
     }

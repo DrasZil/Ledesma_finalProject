@@ -9,8 +9,7 @@
 .projects .slider{
     position: absolute;
     width: clamp(150px, 25vh, 400px);
-    height: auto;
-    top: 20%;
+    top: 25%;
     /*50 percent from the margin minus half of its width value*/
     left: calc(50% - 100px);
     transform-style: preserve-3d;
@@ -22,7 +21,7 @@
 full rotation(360def) for a full rotating animation on the images*/
 @keyframes autoRun{
     from{
-        transform:  perspective(1000px) rotateX(-10deg) rotateY(0deg);
+        transform: perspective(1000px) rotateX(-10deg) rotateY(0deg);
     }to{
         transform: perspective(1000px)  rotateX(-10deg) rotateY(360deg);
     }
