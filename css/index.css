@@ -604,16 +604,6 @@ li a{
     }
 }
 
-/* Large laptops & small desktops */
-@media (max-width: 1440px) {
-    .nav-bar {
-        width: 35%;
-    }
-    .nav-bar a {
-        font-size: 2rem;
-    }
-}
-
 /* Tablets & medium screens */
 @media (max-width: 1024px) {
     .nav-bar {

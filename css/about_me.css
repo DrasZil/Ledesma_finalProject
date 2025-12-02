@@ -87,3 +87,60 @@ body{
 }
 
 /*=============================================================================================================*/
+
+/* Big screens scaling down */
+@media (max-width: 1440px) {
+    html { font-size: 58%; }
+    .header { padding: 2rem 8%; }
+    .about-more h1 { font-size: 5.5rem; }
+}
+
+/* Laptops */
+@media (max-width: 1024px) {
+    html { font-size: 54%; }
+    .nav-bar { width: 55%; }
+    .about-more { padding-top: 10rem; }
+    .about-more h1 { font-size: 5rem; }
+    .section-block { padding: 3.5rem; }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    html { font-size: 50%; }
+    .header { padding: 1.5rem 6%; }
+    .about-more { padding: 10rem 6% 3rem; }
+    .about-more h1 { font-size: 4.5rem; }
+    .section-block h2 { font-size: 3rem; }
+    .section-block p, .section-block ul { font-size: 1.8rem; }
+    .section-block:hover { transform: scale(1.015); } /* softer hover */
+}
+
+/* Large phones */
+@media (max-width: 600px) {
+    .nav-bar { width: 70%; }
+    .about-more h1 { font-size: 4rem; }
+    .section-block { padding: 2.8rem; margin-bottom: 3rem; }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    html { font-size: 46%; }
+    .header { padding: 1.2rem 5%; }
+    .about-more { text-align: center; }
+    .about-more h1 { font-size: 3.6rem; }
+    .section-block h2 { font-size: 2.6rem; }
+    .section-block p, .section-block ul { font-size: 1.6rem; }
+}
+
+/* Very small devices */
+@media (max-width: 375px) {
+    html { font-size: 44%; }
+    .nav-bar { width: 80%; }
+    .about-more h1 { font-size: 3.2rem; }
+}
+
+/* Extra tiny */
+@media (max-width: 320px) {
+    html { font-size: 40%; }
+    .section-block h2 { font-size: 2.2rem; }
+}
