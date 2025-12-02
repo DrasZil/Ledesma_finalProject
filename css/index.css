@@ -30,6 +30,7 @@ html{
 body{
     background: var(--primary-bg-color);
     color: var(--text-color);
+    cursor: url('../images/Cursor/Thanods.png'), auto;
 }
 
 body a{
@@ -37,6 +38,7 @@ body a{
     color: var(--text-color);
     font-weight: 500;
 }
+
 
 /*=============================================================================================================*/
 
@@ -63,6 +65,8 @@ body a{
     font-weight: 500;
     transition: 0.3s ease-in-out;
     border-bottom: 3px solid transparent;
+    cursor: url('../images/Cursor/Infinity_Gauntlet_Snap.png'), pointer;
+    pointer-events: auto;
 }
 /* nav link changes upon hover*/
 .nav-bar a:hover{
@@ -85,7 +89,8 @@ body a{
     font-size: 3rem;
     color: var(--text-color);
     font-weight: 800;
-    cursor: pointer;
+    cursor: url('../images/Cursor/Infinity_Gauntlet_Snap.png'), pointer;
+    pointer-events: auto;
     transition: 0.3s ease-in-out;
 }
 /*Makes logo a bit bigger upon hovering*/
@@ -121,7 +126,8 @@ span{
         #A0153E 100%
     );
     letter-spacing: 1px;
-    cursor: pointer;
+    cursor: url('../images/Cursor/Infinity_Gauntlet_Snap.png'), pointer;
+    pointer-events: auto;
     transition: 0.3s ease-in-out;
     color: var(--text-color);
     border: none;
@@ -130,6 +136,10 @@ span{
 /*Makes btn a bit bigger upon hover*/
 .btn-gradient:hover{
     transform: scale(1.05);
+}
+.btn-gradient a{
+    cursor: url('../images/Cursor/Infinity_Gauntlet_Snap.png'), pointer;
+    pointer-events: auto;
 }
 
 /*Style for the Hire me and contact button*/
@@ -150,6 +160,8 @@ span{
     color: black;
     border: 2px solid transparent;
     transition: 0.3s ease-in-out;
+    cursor: url('../images/Cursor/Infinity_Gauntlet_Snap.png'), pointer;
+    pointer-events: auto;
 }
 .btn:hover{
     transform: scale(1.05);
@@ -219,6 +231,9 @@ section{
     color: var(--primary-color);
     margin: 3rem 0.5rem;
     transition: 0.3s ease-in-out;
+    cursor: url('../images/Cursor/Infinity_Gauntlet_Snap.png'), pointer;
+    pointer-events: auto;
+
 }
 /*changes the icons text and background color and it makes it a bit bigger
 and moves to the left a bit upon hover*/
@@ -228,6 +243,21 @@ and moves to the left a bit upon hover*/
     transform: scale(1.2)translate(-5px);
     box-shadow: 0 0 25px var(--primary-color);
 }
+
+
+/*changes the styling of the 2nd button which is the nth (Contact btn)*/
+.btn-group a:nth-of-type(2){
+    background-color: black;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 25px transparent;
+}
+.btn-group a:nth-of-type(2):hover{
+    box-shadow: 0 0 25px var(--primary-color);
+    background-color: var(--primary-color);
+    color: black;
+}
+
 
 /*=============================================================================================================*/
 
@@ -327,7 +357,8 @@ and moves to the left a bit upon hover*/
     background-color: var(--primary-color);
     height: 600px;
     border-radius: 3rem;
-    cursor: pointer;
+    cursor: url('../images/Cursor/Infinity_Gauntlet_Snap.png'), pointer;
+    pointer-events: auto;
     border: 5px solid transparent;
     transform: 0.3s ease-in-out;
 }
@@ -392,21 +423,9 @@ and moves to the left a bit upon hover*/
     border: 2px solid var(--primary-color);
     margin: 1.5rem 0;
     resize: none;
+    cursor: url('../images/Cursor/spidey.png'), pointer;
+    pointer-events: auto;
 }
-
-/*changes the styling of the 2nd button which is the nth (Contact btn)*/
-.btn-group a:nth-of-type(2){
-    background-color: black;
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-    box-shadow: 0 0 25px transparent;
-}
-.btn-group a:nth-of-type(2):hover{
-    box-shadow: 0 0 25px var(--primary-color);
-    background-color: var(--primary-color);
-    color: black;
-}
-
 
 /*=============================================================================================================*/
 
@@ -457,9 +476,16 @@ and moves to the left a bit upon hover*/
     color: var(--primary-color);
     text-decoration: none;
     transition: 0.3s;
+    cursor: url('../images/Cursor/Infinity_Gauntlet_Snap.png'), pointer;
+    pointer-events: auto;
 }
 .footer-contact p a:hover{
     text-decoration: underline;
+}
+
+li a{
+    cursor: url('../images/Cursor/Infinity_Gauntlet_Snap.png'), pointer;
+    pointer-events: auto;
 }
 
 /*=============================================================================================================*/
@@ -468,7 +494,8 @@ and moves to the left a bit upon hover*/
 @media(max-width: 1285px){
     #menu-icon{
         display: block;
-        cursor: pointer;
+        cursor: url('../images/Cursor/Infinity_Gauntlet_Snap.png'), pointer;
+        pointer-events: auto;
         transition: transform 0.3s ease-in-out, color 0.3s ease;
         position: relative;
         z-index: 2000;

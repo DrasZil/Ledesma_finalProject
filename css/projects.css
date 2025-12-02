@@ -47,10 +47,11 @@ full rotation(360def) for a full rotating animation on the images*/
     border-radius: 25px;
     box-shadow: 0 0 25px var(--primary-color);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
-    cursor: pointer;
+    cursor: url('../images/Cursor/repulser.png'), pointer;
+    pointer-events: auto;
 }
 .projects .slider .items:hover img{
-    z-index: 1; 
+    z-index: 11; 
     transform: scale(1.2) translate(-5px);
     box-shadow: 0 0 25px var(--primary-color),
                 0 0 50px var(--primary-color),
@@ -150,7 +151,8 @@ its full view will pop up*/
     right: 2rem;
     font-size: 3rem;
     color: #fff;
-    cursor: pointer;
+    cursor: url('../images/Cursor/repulser.png'), pointer;
+    pointer-events: auto;
 }
 
 /*=============================================================================================================*/
